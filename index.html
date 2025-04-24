@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    .info-box {
+      background: linear-gradient(to right, #a64ca6, #40e0d0); /* фиолетовый -> берюзовый */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5em;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      background-color: #a64ca6;
+    }
+
+    .nav-bar button {
+      background-color: #40e0d0;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-bar button:hover {
+      background-color: #33c2b4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="info-box">
+    Здесь будет информация
+  </div>
+
+  <div class="nav-bar">
+    <button>Кнопка 1</button>
+    <button>Кнопка 2</button>
+    <button>Кнопка 3</button>
+    <button>Кнопка 4</button>
+    <button>Кнопка 5</button>
+  </div>
+
+</body>
+</html>
