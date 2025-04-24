@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Обсуждение | MarioClub</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Обсуждение поездки — MarioClub</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
     body {
       background-color: #f5f5f5;
       padding: 20px;
-      font-family: "Segoe UI", sans-serif;
     }
 
     .info-box {
@@ -16,6 +22,7 @@
       color: white;
       border-radius: 15px;
       padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       margin-bottom: 30px;
     }
 
@@ -25,20 +32,26 @@
     }
 
     .info-box p {
+      margin-bottom: 15px;
       line-height: 1.6;
     }
 
+    .telegram-widget {
+      margin-top: 30px;
+      width: 100%;
+    }
+
     .nav-bar {
-      margin-top: 20px;
       display: flex;
       justify-content: center;
+      margin-top: 30px;
     }
 
     .nav-bar button {
       background: #a64ca6;
       color: white;
       border: none;
-      padding: 15px 25px;
+      padding: 15px 30px;
       font-size: 1em;
       border-radius: 12px;
       cursor: pointer;
@@ -47,28 +60,22 @@
 
     .nav-bar button:hover {
       background-color: #7d3792;
-      transform: translateY(-2px);
-    }
-
-    .telegram-widget {
-      margin-top: 40px;
-      width: 100%;
     }
   </style>
 </head>
 <body>
 
   <div class="info-box">
-    <h1>Обсуждение поездки</h1>
-    <p><strong>Дата:</strong> 1–7 августа</p>
-    <p><strong>Место:</strong> Ессентуки</p>
-    <p><strong>Информация:</strong> План поездки, цены и куда поедем — обсуждаем ниже 👇</p>
+    <h1>Обсуждение поездки в Ессентуки</h1>
+    <p><strong>Даты:</strong> с 1 по 7 августа</p>
+    <p><strong>Что будет:</strong> маршрут, цена, развлечения — обсуждаем ниже 👇</p>
   </div>
 
+  <!-- Telegram Comments Widget -->
   <div class="telegram-widget">
     <script async src="https://telegram.org/js/telegram-widget.js?22"
-            data-telegram-discussion="t.me/marioclubdon"
-            data-comments-limit="20"
+            data-telegram-discussion="marioclubdon/1"
+            data-comments-limit="10"
             data-color="a64ca6"
             data-dark="0"
             width="100%">
@@ -76,7 +83,7 @@
   </div>
 
   <div class="nav-bar">
-    <button onclick="window.location.href='index.html'">Назад на главную</button>
+    <button onclick="window.location.href='index.html'">Назад</button>
   </div>
 
 </body>
