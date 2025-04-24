@@ -9,79 +9,82 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
+      font-family: "Segoe UI", sans-serif;
     }
 
     body {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
       background-color: #f5f5f5;
+      padding: 20px;
     }
 
     .info-box {
-      background: linear-gradient(to right, #a64ca6, #40e0d0); /* фиолетовый -> берюзовый */
+      background: linear-gradient(to right, #a64ca6, #40e0d0);
       color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 1.5em;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .info-box h1 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .info-box p {
+      margin-bottom: 15px;
+      line-height: 1.6;
     }
 
     .nav-bar {
       display: flex;
-      justify-content: space-around;
-      padding: 10px;
-      background-color: #a64ca6;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     .nav-bar button {
-      background-color: #40e0d0;
-      color: white;
+      flex: 1 1 calc(20% - 10px);
+      background: #a64ca6;
+      color: #ffffff;
       border: none;
-      border-radius: 10px;
-      padding: 10px 20px;
+      padding: 15px;
       font-size: 1em;
+      border-radius: 12px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
     .nav-bar button:hover {
-      background-color: #33c2b4;
+      background-color: #7d3792;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .nav-bar button {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="info-box">
-    О сайте
-Это уникальная платформа, созданная специально для друзей, которые хотят оставаться на связи, делиться новостями и поддерживать друг друга в комфортной и дружелюбной онлайн-среде.
+    <h1>О сайте</h1>
+    <p>Это уникальная платформа, созданная специально для друзей, которые хотят оставаться на связи, делиться новостями и поддерживать друг друга в комфортной и дружелюбной онлайн-среде.</p>
 
-Основные функции сайта:
-Лента новостей:
+    <p><strong>Основные функции сайта:</strong></p>
 
-Каждый пользователь может публиковать обновления, рассказывать о своих событиях, делиться мыслями, фото и видео. Эти посты видны только друзьям, что делает общение более личным и уютным.
+    <p><strong>Лента новостей:</strong> пользователи могут публиковать обновления, делиться мыслями, фото и видео. Посты видны только друзьям, делая общение уютным и личным.</p>
 
-Вопросы и обсуждения:
+    <p><strong>Вопросы и обсуждения:</strong> возможность задавать вопросы друзьям или аудитории, проводить опросы и начинать разговоры.</p>
 
-Пользователи могут задавать вопросы своим друзьям или аудитории сайта — будь то личные советы, мнения или просто весёлые опросы. Это помогает начать разговоры и лучше узнать друг друга.
+    <p><strong>Публикации статей и заметок:</strong> поддержка длинных текстов, статей и блогов с удобным редактором.</p>
 
-Публикации статей и заметок:
+    <p><strong>Мини-игра на CSS:</strong> встроенная игра для развлечения и создания весёлой атмосферы внутри сообщества.</p>
 
-Сайт позволяет публиковать более длинные тексты — будь то статьи, блоги или просто развернутые размышления. Удобный редактор помогает красиво оформить текст, добавить изображения и форматирование.
-
-Мини-игра на CSS:
-
-Встроенная игра, разработанная с помощью CSS, — это приятное дополнение к функционалу сайта. Она служит для развлечения пользователей и создания весёлой атмосферы внутри сообщества.
-
-Дружелюбное пространство:
-
-Платформа не рассчитана на широкую публику или коммерческое продвижение — это закрытое и уютное пространство только для друзей. Здесь нет рекламы, спама и давления внешнего мира.
-
-
+    <p><strong>Дружелюбное пространство:</strong> без рекламы и внешнего давления — только для друзей.</p>
   </div>
 
   <div class="nav-bar">
