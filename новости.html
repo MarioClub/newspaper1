@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новости</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+
+    .info-box {
+      background: linear-gradient(to right, #a64ca6, #40e0d0);
+      color: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .info-box h1 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .info-box p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .nav-bar button {
+      flex: 1 1 calc(20% - 10px);
+      background: #a64ca6;
+      color: #ffffff;
+      border: none;
+      padding: 15px;
+      font-size: 1em;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-bar button:hover {
+      background-color: #7d3792;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .nav-bar button {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="info-box">
+    <h1>Новости</h1>
+    <p>Сайт находиться в стадии разработки</p>
+
+    <p><strong>Нужны помошники)</strong></p>
+
+    <p><strong>Люди которые умеют работать с текстом</strong> иначе вы получите корявый русский язык от Егора))))</p>
+
+    <p><strong>Люди которые будет работь над дизайном сайта</strong> Тот самы человек который будет оптимизировать дизайн , для наших глаз.</p>
+
+    <p><strong>Люди которые будут рабоать с базой данных</strong> Самая сложная херня , но я верю что мы справимся)</p>
+
+    <p><strong>Мини-игра на CSS:</strong> Ну тут по желанию</p>
+  </div>
+
+  <div class="nav-bar">
+    <button>Главная страница</button>
+  </div>
+
+</body>
+</html>
